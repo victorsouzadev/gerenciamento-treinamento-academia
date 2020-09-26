@@ -8,15 +8,32 @@
     tools:context=".LoginActivity">
 
 
+    <TextView
+        android:id="@+id/txtLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/name_logo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/sign_in_button"
         android:layout_width="120sp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:drawableStart="@drawable/googleg_standard_color_18"
         android:padding="10dp"
         android:paddingStart="20dp"
-        android:text="Entrar"
+        android:text="@string/entrar"
         android:textAllCaps="false"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +41,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.80" />
+        app:layout_constraintVertical_bias="0.80"
+        tools:ignore="RtlSymmetry" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
